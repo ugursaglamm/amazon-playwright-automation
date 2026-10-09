@@ -1,5 +1,7 @@
 # Amazon.com.tr UI Automation
 
+[![Playwright Tests](https://github.com/ugursaglamm/amazon-playwright-automation/actions/workflows/playwright.yml/badge.svg)](https://github.com/ugursaglamm/amazon-playwright-automation/actions/workflows/playwright.yml)
+
 End-to-end UI test that searches for **"MacBook Pro"** on amazon.com.tr, opens the first result,
 adds it to the cart and validates that the cart total equals the product price — plus extra checks
 that the cart contains exactly the selected product.
