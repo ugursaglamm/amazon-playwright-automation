@@ -11,7 +11,7 @@ export class ProductPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.title = page.locator('#productTitle');
+    this.title = page.locator('#productTitle').first();
     this.asinInput = page.locator('input#ASIN').first();
     this.price = page.locator('#corePriceDisplay_desktop_feature_div .priceToPay').first();
     // The page contains a hidden duplicate of this button, so only the visible one is targeted.

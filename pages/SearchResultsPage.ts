@@ -6,7 +6,7 @@ export class SearchResultsPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.results = page.locator('[data-component-type="s-search-result"]');
+    this.results = page.locator('[data-component-type="s-search-result"]'); // for not AdHolder: '[data-component-type="s-searchresult"]:not(.AdHolder)'
   }
 
   async getFirstResult(): Promise<Locator> {

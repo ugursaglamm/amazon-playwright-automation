@@ -70,7 +70,7 @@ SEARCH_TERM="iPhone 15" npm run test:e2e   # same scenario with another search t
 - **Page Object Model + fixtures** — selectors and page actions live in `pages/`. A custom
   fixture (`fixtures/pages.ts`) injects the page objects into the test, so the spec contains only
   the scenario: `async ({ homePage, cartPage }) => ...`.
-- **`test.step` per scenario step** — the report shows exactly which of the 8 case steps failed.
+- **`test.step` per scenario step** — the report shows exactly which of the 8 steps failed.
 - **No fixed waits** — Playwright auto-waiting and web-first assertions
   (`expect(locator).toBeVisible()`) are used instead of `sleep`/`waitForTimeout`.
 - **Meaningful failure messages** — assertions carry a message that explains the likely cause,
